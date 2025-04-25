@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}
+Home - My E-commerce Site
+{% endblock %}
+
+{% block content %}
+<div class="container mx-auto px-4 py-8">
+    <div class="mb-8">
+        <h2 class="text-2xl font-bold mb-6">Business Offer Discount</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-3">
+            <div class="border rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <div class="relative">
+                    <img src="path_to_business_image.jpg" alt="Business" class="w-full h-48 object-cover rounded-t-lg">
+                </div>
+                <div class="p-3 relative">
+                    <textarea 
+                        class="w-full min-h-[80px] p-2 border rounded-md resize-none text-sm"
+                        placeholder="Enter business description..."></textarea>
+                    <div class="flex items-center justify-between mt-2">
+                        <a href="#" class="text-blue-600 hover:underline text-sm">Visit Website</a>
+                        <button class="text-yellow-400 hover:text-yellow-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0012 18.469a3.375 3.375 0 00-1.72-.922l-.548-.547z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+{% endblock %}
